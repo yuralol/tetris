@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tetris", "Tetris\Tetris.csproj", "{A9817A02-6748-4307-8E02-2C5379236A38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tetris", "Tetris\Tetris.csproj", "{A9817A02-6748-4307-8E02-2C5379236A38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections", "Collections\Collections.csproj", "{B551A14B-B770-476B-A0F1-A73C74BB0A91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collections", "Collections\Collections.csproj", "{B551A14B-B770-476B-A0F1-A73C74BB0A91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enums", "Enums\Enums.csproj", "{08C8F247-9E10-4910-94C9-CC57221756C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B551A14B-B770-476B-A0F1-A73C74BB0A91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B551A14B-B770-476B-A0F1-A73C74BB0A91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B551A14B-B770-476B-A0F1-A73C74BB0A91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08C8F247-9E10-4910-94C9-CC57221756C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08C8F247-9E10-4910-94C9-CC57221756C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08C8F247-9E10-4910-94C9-CC57221756C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08C8F247-9E10-4910-94C9-CC57221756C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
