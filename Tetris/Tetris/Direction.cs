@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Enums
+namespace Tetris
 {
-    enum Day : byte
+    enum Direction
     {
-        Mon = 1, Tue, Wed, Thue, Fri, Sat, Sun
+        LEFT, RIGHT, DOWN
     }
 }
