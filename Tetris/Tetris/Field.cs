@@ -8,6 +8,9 @@ namespace Tetris
 {
     static class Field
     {
+        private static int _width = 40;
+        private static int _height = 30;
+
         public static int Width
         {
             get
@@ -17,25 +20,25 @@ namespace Tetris
             set
             {
                 _width = value;
-                Console.SetWindowSize(_width, Field.HEIHT);
-                Console.SetBufferSize(_width, Field.HEIHT);
+                Console.SetWindowSize(_width, Height);
+                Console.SetBufferSize(_width, Height);
             }
         }
-
-
-        private static int _width = 40;
-        public const int HEIHT = 30;
-
-        public static int GetWigth()
+        public static int Height
         {
-            return _width;
+            get
+            {
+                return _height;
+            }
+            set
+            {
+                _height = value;
+                Console.SetWindowSize(value, Field.Height);
+                Console.SetBufferSize(value, Field.Height);
+            }
         }
+        
 
-        public static void SetWidth(int value)
-        {
-            _width = value;
-            Console.SetWindowSize(_width, Field.HEIHT);
-            Console.SetBufferSize(_width, Field.HEIHT);
-        }
+        
     }
 }
