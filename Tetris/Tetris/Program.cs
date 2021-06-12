@@ -17,7 +17,10 @@ namespace Tetris
         {
             Console.SetWindowSize(Field.Width, Field.Height);
             Console.SetBufferSize(Field.Width, Field.Height);
-            
+
+            IDrawer drawer = new ConsoleDrawer();
+            drawer.DrawPoint(3, 4);
+
             generator = new FigureGenerator(Field.Width / 2, 0, Drawer.DEFAULT_SYMBOL);
             currentFigure = generator.GetNewFigure();
             SetTimer();

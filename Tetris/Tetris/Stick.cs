@@ -45,5 +45,10 @@ namespace Tetris
                 pList[i].X = pList[0].X + i;
             }
         }
+
+        public override void Rotate()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

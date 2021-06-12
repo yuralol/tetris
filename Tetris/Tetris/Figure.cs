@@ -34,6 +34,22 @@ namespace Tetris
             return result;
         }
 
+        private Direction Reverse(Direction dir)
+        {
+            switch (dir)
+            {
+                case Direction.LEFT:
+                    return Direction.RIGHT;
+                case Direction.RIGHT:
+                    return Direction.LEFT;
+                case Direction.DOWN:
+                    return Direction.UP;
+                case Direction.UP:
+                    return Direction.DOWN;
+            }
+            return dir;
+        }
+
         private Result VerifyPosition()
         {
             foreach (var p in Points)
@@ -55,21 +71,6 @@ namespace Tetris
             foreach(var p in  Points)
             {
                 p.Move(dir);
-            }
-        }
-
-        private static Direction Reverse(Direction dir)
-        {
-            switch(dir)
-            {
-                case Direction.LEFT:
-                    return Direction.RIGHT;
-                case Direction.RIGHT:
-                    return Direction.LEFT;
-                case Direction.DOWN:
-                    return Direction.UP;
-                case Direction.UP:
-                    return Direction.DOWN;
             }
         }
 
