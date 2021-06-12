@@ -22,5 +22,10 @@ namespace Tetris
         {
 
         }
+
+        public override void Rotate()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
